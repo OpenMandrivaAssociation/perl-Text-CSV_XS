@@ -1,7 +1,7 @@
 %define name perl-Text-CSV_XS
 %define module Text-CSV_XS
-%define version 0.23
-%define release %mkrel 11
+%define version 0.29
+%define release %mkrel 1
 
 Name:		%{name}
 Summary:	Text-CSV_XS module for Perl (String_Lang_Text_Proc/Text)
@@ -10,7 +10,7 @@ Release:	%{release}
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/%{module}-%{version}.tar.bz2
+Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/%{module}-%{version}.tar.gz
 Buildroot:	%{_tmppath}/%{name}-buildroot
 Buildrequires: perl-devel
 
