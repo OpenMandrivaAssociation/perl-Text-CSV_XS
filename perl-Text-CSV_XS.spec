@@ -1,6 +1,6 @@
 %define name perl-Text-CSV_XS
 %define module Text-CSV_XS
-%define version 0.29
+%define version 0.30
 %define release %mkrel 1
 
 Name:		%{name}
