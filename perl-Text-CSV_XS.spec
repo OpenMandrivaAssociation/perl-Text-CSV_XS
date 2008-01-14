@@ -1,7 +1,7 @@
 %define name perl-Text-CSV_XS
 %define module Text-CSV_XS
 %define version 0.31
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name:		%{name}
 Summary:	Text-CSV_XS module for Perl (String_Lang_Text_Proc/Text)
