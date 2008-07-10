@@ -1,18 +1,18 @@
-%define name perl-Text-CSV_XS
 %define module Text-CSV_XS
-%define version 0.31
-%define release %mkrel 2
+%define name perl-%{module}
+%define version 0.52
+%define release %mkrel 1
 
 Name:		%{name}
-Summary:	Text-CSV_XS module for Perl (String_Lang_Text_Proc/Text)
 Version:	%{version}
 Release:	%{release}
+Summary:	Comma-separated values manipulation routines
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/%{module}-%{version}.tar.gz
-Buildroot:	%{_tmppath}/%{name}-buildroot
+Source:     http://www.cpan.org/modules/by-module/Text/%{module}-%{version}.tgz
 Buildrequires: perl-devel
+Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Text-CSV_XS is a Perl module that provides facilities for the composition
@@ -31,16 +31,16 @@ fields.
 make test
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 %clean
-rm -rf $RPM_BUILD_ROOT 
+rm -rf %{buildroot} 
 
 %files
 %defattr(-,root,root)
 %doc MANIFEST ChangeLog README
-%{perl_vendorarch}/Text/*
-%{perl_vendorarch}/auto/Text/*
+%{perl_vendorarch}/Text
+%{perl_vendorarch}/auto/Text
 %{_mandir}/*/*
 
