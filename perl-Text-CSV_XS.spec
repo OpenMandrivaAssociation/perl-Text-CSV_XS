@@ -1,18 +1,18 @@
-%define module Text-CSV_XS
-%define name perl-%{module}
-%define version 0.64
-%define release %mkrel 1
+%define upstream_name    Text-CSV_XS
+%define upstream_version 0.65
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
+
 Summary:	Comma-separated values manipulation routines
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/Text/%{module}-%{version}.tgz
+URL:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Text/%{upstream_name}-%{upstream_version}.tgz
+
 Buildrequires: perl-devel
-Buildroot:	%{_tmppath}/%{name}-%{version}
+Buildroot:%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Text-CSV_XS is a Perl module that provides facilities for the composition
@@ -21,7 +21,7 @@ class can combine fields into a CSV string and parse a CSV string into
 fields.
 
 %prep 
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
