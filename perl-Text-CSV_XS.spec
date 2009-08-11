@@ -1,5 +1,5 @@
 %define upstream_name    Text-CSV_XS
-%define upstream_version 0.65
+%define upstream_version 0.67
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -43,4 +43,3 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/Text
 %{perl_vendorarch}/auto/Text
 %{_mandir}/*/*
-
