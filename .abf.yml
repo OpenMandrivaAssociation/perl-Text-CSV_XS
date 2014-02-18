@@ -1,2 +1,4 @@
+removed_sources:
+  Text-CSV_XS-0.97.tgz: e4c11e54c07191ba233ac74ab2e89316ade507f9
 sources:
-  "Text-CSV_XS-0.97.tgz": e4c11e54c07191ba233ac74ab2e89316ade507f9
+  Text-CSV_XS-1.04.tgz: 719023dc3a0665b5d7a568b923a2eb7cfbcc3ab4
