@@ -1,7 +1,8 @@
 %define modname	Text-CSV_XS
-%define modver 1.05
+%define modver 1.08
 
 Summary:	Comma-separated values manipulation routines
+
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
 Release:	1
@@ -35,6 +36,7 @@ make test
 %{perl_vendorarch}/Text
 %{perl_vendorarch}/auto/Text
 %{_mandir}/man3/*
+
 
 
 
