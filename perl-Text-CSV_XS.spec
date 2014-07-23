@@ -1,11 +1,11 @@
 %define modname	Text-CSV_XS
-%define modver 1.08
+%define modver 1.09
 
 Summary:	Comma-separated values manipulation routines
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -36,7 +36,3 @@ make test
 %{perl_vendorarch}/Text
 %{perl_vendorarch}/auto/Text
 %{_mandir}/man3/*
-
-
-
-
