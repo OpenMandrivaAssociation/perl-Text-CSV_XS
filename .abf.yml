@@ -3,5 +3,6 @@ removed_sources:
   Text-CSV_XS-1.04.tgz: 719023dc3a0665b5d7a568b923a2eb7cfbcc3ab4
   Text-CSV_XS-1.05.tgz: fa6b05269ef9435995dd4f917e9b355471506d34
   Text-CSV_XS-1.08.tgz: d47908d34b2413a3e342716276656b168a586c24
-sources:
   Text-CSV_XS-1.09.tgz: a5886328a31e7b5e7d95c7cde29a683c9bb39df6
+sources:
+  Text-CSV_XS-1.11.tgz: 6af88dbbc9970f4e5487477b22604fac1ac6c789
