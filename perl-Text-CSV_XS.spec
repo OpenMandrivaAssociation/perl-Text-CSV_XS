@@ -10,6 +10,7 @@ License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Text/%{modname}-%{modver}.tgz
+BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
 
 %description
