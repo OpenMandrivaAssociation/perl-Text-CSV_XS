@@ -1,5 +1,5 @@
 %define modname	Text-CSV_XS
-%define modver 1.43
+%define modver 1.46
 
 Summary:	Comma-separated values manipulation routines
 
