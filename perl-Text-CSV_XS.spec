@@ -1,3 +1,4 @@
+%define _empty_manifest_terminate_build 0
 %define modname	Text-CSV_XS
 %define modver 1.46
 
