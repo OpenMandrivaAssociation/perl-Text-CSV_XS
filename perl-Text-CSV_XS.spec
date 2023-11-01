@@ -1,18 +1,17 @@
-%define _empty_manifest_terminate_build 0
+%undefine _debugsource_packages
 %define modname	Text-CSV_XS
-%define modver 1.46
 
 Summary:	Comma-separated values manipulation routines
-
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	3
+Version:	1.52
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Text/%{modname}-%{modver}.tgz
+Url:		https://metacpan.org/dist/%{modname}
+Source0:	https://cpan.metacpan.org/modules/by-module/Text/%{modname}-%{version}.tgz
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
+Obsoletes:	%{name} = 1.460.0-1
 
 %description
 Text-CSV_XS is a Perl module that provides facilities for the composition
@@ -21,7 +20,7 @@ class can combine fields into a CSV string and parse a CSV string into
 fields.
 
 %prep 
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
