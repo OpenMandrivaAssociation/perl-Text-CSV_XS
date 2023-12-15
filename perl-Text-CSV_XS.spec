@@ -3,7 +3,7 @@
 
 Summary:	Comma-separated values manipulation routines
 Name:		perl-%{modname}
-Version:	1.52
+Version:	1.53
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
