@@ -3,7 +3,7 @@
 Summary:	Comma-separated values manipulation routines
 Name:		perl-%{modname}
 Version:	1.60
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/%{modname}
