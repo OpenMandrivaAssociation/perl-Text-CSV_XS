@@ -8,6 +8,7 @@ License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/%{modname}
 Source0:	https://cpan.metacpan.org/modules/by-module/Text/%{modname}-%{version}.tgz
+BuildRequires:	make
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel
 Obsoletes:	%{name} = 1.460.0-1
