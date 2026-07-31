@@ -2,8 +2,8 @@
 
 Summary:	Comma-separated values manipulation routines
 Name:		perl-%{modname}
-Version:	1.60
-Release:	2
+Version:	1.64
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/%{modname}
@@ -20,7 +20,7 @@ class can combine fields into a CSV string and parse a CSV string into
 fields.
 
 %prep 
-%autosetup -p1 -n %{modname}-%{version}
+%autosetup -p1 -n Text-CSV_XS-1.64
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
